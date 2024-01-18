@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "app"
+client_id = "9d5d8bcfe90813bbe90c21d1ea3486d8"
+application_url = "https://beginning-ribbon-reporter-textiles.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://beginning-ribbon-reporter-textiles.trycloudflare.com/auth/callback",
+  "https://beginning-ribbon-reporter-textiles.trycloudflare.com/auth/shopify/callback",
+  "https://beginning-ribbon-reporter-textiles.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-40e52dd9.myshopify.com"

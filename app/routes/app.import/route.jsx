@@ -32,7 +32,6 @@ import ImportFileModal from './modal/importFile';
 export async function loader({ request }) {
   const { admin, session } = await authenticate.admin(request);
   const products = await getProducts(session.shop, admin.graphql);
-  console.log("---------->>>>", products)
   return json({ products });
 }
 
